@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Table(name = "member")
 @Getter @Setter
 @ToString
-public class Member {
+public class Member extends BaseEntity {
 
     @Id
     @Column
