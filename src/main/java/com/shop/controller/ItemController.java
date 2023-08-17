@@ -104,7 +104,7 @@ public class ItemController {
         return "item/itemMng";
     }
 
-    @GetMapping(value = "/item/{itemId")
+    @GetMapping(value = "/item/{itemId}")
     public String itemDtl(Model model, @PathVariable("itemId") Long itemId){
         ItemFormDto itemFormDto = itemService.getItemDtl(itemId);
         model.addAttribute("item", itemFormDto);
